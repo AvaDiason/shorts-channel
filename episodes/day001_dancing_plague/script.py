@@ -1,0 +1,22 @@
+# (text, pause_after, speed, gain_db)
+PHRASES = [
+    ("In July of fifteen eighteen, a woman stepped out into a quiet street in Strasbourg...", 0.3, 0.92, 0),
+    ("and she started to dance.", 0.55, 0.87, -0.5),
+    ("No music.", 0.25, 0.9, 0),
+    ("No reason.", 0.35, 0.88, 0),
+    ("And she could not... stop.", 0.55, 0.85, 1.0),
+    ("Within days, dozens had joined her.", 0.25, 1.0, 0),
+    ("By August? As many as four hundred.", 0.5, 0.97, 1.5),
+    ("So the city council made a decision.", 0.3, 0.95, 0),
+    ("They built a stage.", 0.15, 1.0, 0),
+    ("They hired musicians.", 0.25, 1.0, 0),
+    ("Because they believed the cure... was more dancing.", 0.5, 0.9, 0.5),
+    ("It only made it worse.", 0.3, 0.93, 1.0),
+    ("Some, it's said, danced until their bodies simply gave out.", 0.55, 0.88, -1.0),
+    ("In the end, the dancers were carted off to a shrine of Saint Vitus,", 0.1, 0.96, 0),
+    ("the very saint they believed had cursed them,", 0.2, 0.92, 0),
+    ("and they were given... red shoes.", 0.65, 0.85, -2.0),
+    ("Five hundred years later, no one knows for sure why it happened.", 0.4, 0.93, 0),
+    ("So tell me...", 0.3, 0.9, -0.5),
+    ("would you have danced?", 0.9, 0.86, -1.5),
+]
