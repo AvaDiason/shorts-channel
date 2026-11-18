@@ -42,7 +42,7 @@ python3 $EP/render.py still 2 10 20 30 40 50          # look at the stills (pipe
 #    Fix anything unreadable/overlapping/ugly BEFORE the full render.
 (for i in 0 1 2 3; do python3 $EP/render.py $i; done) & (for i in 4 5 6 7; do python3 $EP/render.py $i; done); wait
 # 4. audio
-python3 pipeline/music.py <duration+3>  (writes music_raw.wav) then the ffmpeg echo / loudnorm / sidechain mix as in day001
+python3 pipeline/music.py <duration+3>  (writes music_raw.wav) then the echo / loudnorm / sidechain mix: pipeline/mix.sh $EP <duration> (runs music.py itself, writes $EP/mix.wav)
 # 5. concat scenes (-c copy), mux audio, final encode: -c:v libx264 -crf 27 -preset veryfast -c:a aac -b:a 192k -movflags +faststart
 #    -> videos/dayNNN_slug.mp4  (keep < 40 MB). Check 8 frames from the FINAL file + duration < 59 s.
 # 6. commit (don't commit out/, stills/, wav files) and push to main.
